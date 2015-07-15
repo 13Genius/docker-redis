@@ -1,4 +1,4 @@
-genius-docker-redis
+docker-redis
 ==================
 Base docker image to run a Redis server
 
@@ -6,9 +6,9 @@ Base docker image to run a Redis server
 Usage
 -----
 
-To create the image `genius/redis`, execute the following command on the genius-redis folder:
+To create the image `13genius/redis`, execute the following command on the 13genius-redis folder:
 
-	docker build -t genius/redis .
+	docker build -t 13genius/redis .
 
 
 Running the Redis server
@@ -16,7 +16,7 @@ Running the Redis server
 
 Run the following command to start Redis:
 
-	docker run -d -p 6379:6379 genius/redis
+	docker run -d -p 6379:6379 13genius/redis
 
 The first time that you run your container, a new random password will be set.
 To get the password, check the logs of the container by running:
@@ -88,4 +88,4 @@ If you want Redis to store data in a volume to prevent data from disappearing sh
 
 Please note that this will impact performance. For a more lightweight persistence by saving every second instead of every instruction, use `REDIS_APPENDFSYNC=everysec` instead. More info at [redis.io](http://redis.io/topics/persistence)
 
-**by https://www.13genius.com**
+**by https://13genius.com**
